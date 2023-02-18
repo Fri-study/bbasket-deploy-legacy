@@ -32,7 +32,7 @@ SECRET_KEY = "*****"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bbasket.herokuapp.com']
 
 
 # Application definition
@@ -66,7 +66,7 @@ ROOT_URLCONF = "bbasketprj.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'build')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
